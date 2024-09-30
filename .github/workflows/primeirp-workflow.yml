@@ -25,6 +25,7 @@ jobs:
     job1:
 
       name: Primeira tarefa
+      needs: job2
       runs-on: ubuntu-latest
 
       #vamos incluir alguns passos para o primeiro job
