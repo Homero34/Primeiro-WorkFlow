@@ -1,0 +1,45 @@
+# primeiro vamos dar um nome para o seu portifolio 
+name: workflow com dependencias de Jobs falho
+
+# escolhendo os eventos (gatilhos) de disparo do job
+on: 
+    push:
+      branches: [main, master, develop, hotflix]
+    pull_request: 
+      branches: [main, mater, develop, hotflix]
+
+# agora iremos descrever os passos do horkflow
+jobs:
+  job1:
+    name: Primeiro fluxo
+    runs-on: ubuntu-latest
+    steps:
+      - name: Passo 1
+          echo "Rodando primeiro passo do deploy"
+      - name: Passo 2
+          echo "Rodando segundo passo do deploy"
+      - name: Passo 3
+          echo "Rodando terceiro passo do deploy"
+  job2:
+     name: Segundo fluxo
+     runs-on: ubuntu-latest
+     steps:
+      - name: Passo 4
+          echo "Rodando quarto passo do deploy"
+      - name: Passo 5
+          echo "Rodando quinto passo do deploy"
+      - name: Passo 6
+          echo "Rodando sexto passo do deploy"
+  job3:
+     name: Terceiro fluxo
+     runs-on: ubuntu-latest
+     steps:
+      - name: Passo 7
+          echo "Rodando setimo passo do deploy"
+      - name: Passo 8
+          echo "Rodando oitavo passo do deploy"
+      - name: Passo 9
+          echo "Rodando nono passo do deploy"
+
+
+    
