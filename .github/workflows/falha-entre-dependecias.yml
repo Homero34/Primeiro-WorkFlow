@@ -15,31 +15,31 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Passo 1
-          echo "Rodando primeiro passo do deploy"
+        run:   echo "Rodando primeiro passo do deploy"
       - name: Passo 2
-          echo "Rodando segundo passo do deploy"
+        run:   echo "Rodando segundo passo do deploy"
       - name: Passo 3
-          echo "Rodando terceiro passo do deploy"
+        run:   echo "Rodando terceiro passo do deploy"
   job2:
      name: Segundo fluxo
      runs-on: ubuntu-latest
      steps:
       - name: Passo 4
-          echo "Rodando quarto passo do deploy"
+        run: echo "Rodando quarto passo do deploy"
       - name: Passo 5
-          echo "Rodando quinto passo do deploy"
+        run: echo "Rodando quinto passo do deploy"
       - name: Passo 6
-          echo "Rodando sexto passo do deploy"
+        run:  echo "Rodando sexto passo do deploy"
   job3:
      name: Terceiro fluxo
      runs-on: ubuntu-latest
      steps:
       - name: Passo 7
-          echo "Rodando setimo passo do deploy"
+        run:  echo "Rodando setimo passo do deploy"
       - name: Passo 8
-          echo "Rodando oitavo passo do deploy"
+        run:  echo "Rodando oitavo passo do deploy"
       - name: Passo 9
-          echo "Rodando nono passo do deploy"
+        run:  echo "Rodando nono passo do deploy"
 
 
     
